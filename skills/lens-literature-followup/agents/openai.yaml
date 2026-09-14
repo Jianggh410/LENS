@@ -1,0 +1,4 @@
+interface:
+  display_name: "LENS Literature Follow-up"
+  short_description: "定期追踪期刊与 bioRxiv，并按研究项目筛选和总结新文献"
+  default_prompt: "请运行 LENS 文献追踪，抓取最新文章，按 USER_RESEARCH 匹配并生成本周中文摘要。"

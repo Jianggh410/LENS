@@ -1,0 +1,6 @@
+interface:
+  display_name: "LENS Paper Note to PPT"
+  short_description: "Turn a LENS paper note into a figure-led PPTX"
+  default_prompt: "Use $lens-paper-note-to-ppt to turn this paper note into a PowerPoint presentation."
+policy:
+  allow_implicit_invocation: true

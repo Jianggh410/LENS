@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "summaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "article_id": {"type": "integer"},
+          "summary_zh": {"type": "string"},
+          "project_relevance": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "project": {"type": "string"},
+                "reason_zh": {"type": "string"}
+              },
+              "required": ["project", "reason_zh"],
+              "additionalProperties": false
+            }
+          },
+          "suggested_action": {"type": "string", "enum": ["read", "watch"]},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "limitations_zh": {"type": "string"}
+        },
+        "required": ["article_id", "summary_zh", "project_relevance", "suggested_action", "confidence", "limitations_zh"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["summaries"],
+  "additionalProperties": false
+}

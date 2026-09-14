@@ -1,0 +1,11 @@
+.DS_Store
+cache/
+logs/
+wiki/
+git-add.txt
+data/**/*.sqlite
+data/**/*.sqlite-*
+data/**/*.sqlite3
+data/**/*.sqlite3-*
+data/**/*.db
+data/**/*.db-*

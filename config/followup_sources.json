@@ -1,0 +1,46 @@
+{
+  "lookback_days": 10,
+  "crossref_enrich": true,
+  "crossref_mailto": "",
+  "sources": [
+    {
+      "id": "nature",
+      "name": "Nature",
+      "type": "rss",
+      "journal": "Nature",
+      "url": "https://www.nature.com/nature.rss",
+      "enabled": true
+    },
+    {
+      "id": "cell",
+      "name": "Cell",
+      "type": "rss",
+      "journal": "Cell",
+      "url": "https://www.cell.com/cell/current.rss",
+      "enabled": true
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "type": "rss",
+      "journal": "Science",
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+      "enabled": true
+    },
+    {
+      "id": "biorxiv",
+      "name": "bioRxiv",
+      "type": "biorxiv",
+      "server": "biorxiv",
+      "journal": "bioRxiv",
+      "categories": [
+        "bioinformatics",
+        "cell_biology",
+        "genomics",
+        "molecular_biology",
+        "systems_biology"
+      ],
+      "enabled": true
+    }
+  ]
+}
