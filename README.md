@@ -1,58 +1,42 @@
 # LENS
 
-LENS is a Codex Skill and script-based workflow for monitoring new literature, matching it to configured research projects, converting selected papers into structured Chinese Obsidian notes, extracting numbered figures, and maintaining literature knowledge indexes.
+**Literature Engine for Note-making and Synthesis**
 
-## Repository layout
-
-```text
-_system/
-├── README.md
-├── LICENSE
-├── docs/
-├── scripts/                         # Install, update, and validation utilities
-├── skills/
-│   ├── lens-paper-note/             # Full-paper reading and note Skill
-│   └── lens-literature-followup/    # RSS/API monitoring and triage Skill
-├── config/                          # Runtime configuration retained in Literature
-├── data/                            # Persistent SQLite and other LENS data
-├── cache/                           # Generated conversion cache
-└── logs/                            # Runtime logs
-```
-
-The installable Skill contains its own `SKILL.md`, references, executable workflow scripts, and note templates. Runtime cache and logs remain under `_system`; generated Reading and Library indexes are written to the top-level `Literature/Wiki/` directory for direct Obsidian access.
-
-## Quick start
-
-Validate and install the Skill for Codex discovery:
-
-```bash
-bash scripts/validate.sh
-bash scripts/install.sh
-```
-
-Ingest one paper directly:
-
-```bash
-bash skills/lens-paper-note/scripts/ingest_paper.sh "/absolute/path/paper.pdf"
-```
-
-Or ask Codex: `Use LENS to read this paper and create a structured literature note.`
-
-Run literature follow-up without AI summarization:
-
-```bash
-bash skills/lens-literature-followup/scripts/run_followup.sh --no-ai
-```
-
-Run the complete follow-up workflow:
-
-```bash
-bash skills/lens-literature-followup/scripts/run_followup.sh
-```
+LENS is a Codex Skill and script-based literature workflow. Give an Agent a scientific paper and LENS can create a structured Chinese Obsidian note, extract numbered figures and Review tables, maintain literature indexes, monitor new publications, and turn a note into a figure-led PowerPoint.
 
 ## Documentation
 
+- [中文说明](README_CN.md)
+- [English documentation](README_EN.md)
 - [Installation](docs/installation.md)
 - [Configuration](docs/configuration.md)
 - [Workflow](docs/workflow.md)
+- [System directories and cleanup](docs/system-directory.md)
+- [系统目录与清理说明](docs/system-directory_CN.md)
 - [Troubleshooting](docs/troubleshooting.md)
+
+## At a glance
+
+Ask the Agent in natural language:
+
+```text
+使用 LENS 读取这个 PDF，生成结构化文献笔记。
+```
+
+![Using LENS in an Agent](assets/agent-usage-example.png)
+
+LENS produces structured, figure-aware notes designed for continued reading and curation in Obsidian.
+
+![Example LENS paper note](assets/paper-note-example.png)
+
+## Core capabilities
+
+- Article and Review PDF ingestion
+- Structured Chinese Obsidian notes with metadata and evidence logic
+- Numbered Figure extraction and Review Table extraction
+- Question–Method Map, evidence chain, critique, and research implications
+- Reading and Library Wiki generation
+- RSS/API literature follow-up based on configured research projects
+- Figure-led PowerPoint generation from LENS notes
+
+Licensed under the terms in [LICENSE](LICENSE).
