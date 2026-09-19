@@ -1,4 +1,4 @@
 interface:
   display_name: "LENS Paper Note"
-  short_description: "将论文转换为中文结构化 Obsidian 笔记并维护文献知识库"
-  default_prompt: "请使用 LENS 读取这篇论文，生成结构化中文文献笔记，提取可可靠定位的主图，并更新文献 Wiki。"
+  short_description: "将论文转换为中文结构化 Markdown 文件并维护文献知识库"
+  default_prompt: "请使用 LENS 读取这篇论文，生成结构化中文 Markdown 文件，提取可可靠定位的主图，并更新文献 Wiki。"

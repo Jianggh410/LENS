@@ -1,6 +1,6 @@
 ---
 name: lens-literature-followup
-description: Monitor configured scientific journal RSS feeds and bioRxiv, deduplicate new articles in SQLite, match title or abstract text against LENS USER_RESEARCH projects, generate abstract-grounded Chinese summaries, and maintain weekly and project-based Obsidian follow-up pages. Trigger for literature follow-up, weekly paper monitoring, RSS journal tracking, bioRxiv tracking, research-keyword alerts, pending follow-up summaries, or follow-up status checks.
+description: Monitor configured scientific journal RSS feeds and bioRxiv, deduplicate new articles in SQLite, match title or abstract text against LENS USER_RESEARCH projects, generate abstract-grounded Chinese summaries, and maintain weekly and project-based Markdown follow-up pages. Trigger for literature follow-up, weekly paper monitoring, RSS journal tracking, bioRxiv tracking, research-keyword alerts, pending follow-up summaries, or follow-up status checks.
 ---
 
 # LENS Literature Follow-up

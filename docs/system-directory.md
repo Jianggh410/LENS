@@ -35,7 +35,7 @@ cache/
 - Subdirectories are created on demand and may be absent or empty between runs.
 - If `_system/cache` is not writable, paper ingestion falls back to `${TMPDIR:-/tmp}/literature_ingest_cache` for that run.
 
-Before clearing it, confirm that no ingestion, extraction, or follow-up process is running. Clearing cache does not remove source PDFs, Obsidian notes, note assets, Wiki pages, or the persistent follow-up database.
+Before clearing it, confirm that no ingestion, extraction, or follow-up process is running. Clearing cache does not remove source PDFs, structured Markdown files, associated assets, Wiki pages, or the persistent follow-up database.
 
 ## `data/`
 
@@ -56,7 +56,7 @@ Environment variables can override portable settings for one run. Do not delete 
 
 ## `skills/`
 
-- `lens-paper-note/`: full-paper Article/Review reading, structured note generation, Figure/Table extraction, Wiki rebuilding, Reading Canvas, and note-status utilities.
+- `lens-paper-note/`: full-paper Article/Review reading, structured Markdown generation, Figure/Table extraction, Wiki rebuilding, Reading Canvas, and file-status utilities.
 - `lens-literature-followup/`: RSS/API fetching, project matching, persistent state, AI summaries, and weekly/project follow-up pages.
 - `lens-paper-note-to-ppt/`: conversion of a LENS note into a figure-led PowerPoint using `ppt.config`.
 
@@ -93,8 +93,8 @@ Created on demand and excluded from Git. Literature follow-up writes timestamped
 
 ## Files at the `_system` root
 
-- `README.md`: concise project entry and language selector.
-- `README_CN.md` and `README_EN.md`: public-facing project documentation.
+- `README.md`: default Chinese project documentation rendered on the GitHub repository homepage.
+- `README_EN.md`: English project documentation linked from `README.md`.
 - `LICENSE`: repository license.
 - `.gitignore`: excludes cache, logs, databases, and local noise.
 - `.git/`: Git history and metadata; never edit or clean it manually.

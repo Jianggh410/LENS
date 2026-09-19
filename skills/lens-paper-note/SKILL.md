@@ -1,6 +1,6 @@
 ---
 name: lens-paper-note
-description: Use LENS to convert scientific papers into structured Chinese Obsidian notes, extract numbered PDF figures and Review tables, maintain Reading and Library wikis, manage the reading Canvas, and create cross-paper synthesis. Trigger for LENS, paper ingestion, literature notes, ai-draft notes, figure or table extraction, literature wiki rebuilds, or LENS status checks.
+description: Use LENS to convert scientific papers into structured Chinese Markdown files, extract numbered PDF figures and Review tables, maintain Reading and Library wikis, manage the reading Canvas, and create cross-paper synthesis. Trigger for LENS, paper ingestion, literature notes, ai-draft notes, figure or table extraction, literature wiki rebuilds, or LENS status checks.
 ---
 
 # LENS Paper Note

@@ -35,7 +35,7 @@ cache/
 - 子目录按需创建，两次运行之间可能不存在或为空。
 - 如果 `_system/cache` 不可写，论文摄取流程会在当次运行中退回 `${TMPDIR:-/tmp}/literature_ingest_cache`。
 
-清理前必须确认没有论文摄取、图片提取或 follow-up 任务正在运行。清空 cache 不会删除原始 PDF、Obsidian 笔记、笔记 assets、Wiki 页面或持久化 follow-up 数据库。
+清理前必须确认没有论文摄取、图片提取或 follow-up 任务正在运行。清空 cache 不会删除原始 PDF、结构化 Markdown 文件、关联 assets、Wiki 页面或持久化 follow-up 数据库。
 
 ## `data/`
 
@@ -56,7 +56,7 @@ data/literature_followup/literature_followup.sqlite3
 
 ## `skills/`
 
-- `lens-paper-note/`：Article/Review 全文阅读、结构化笔记生成、Figure/Table 提取、Wiki 重建、Reading Canvas 和笔记状态工具。
+- `lens-paper-note/`：Article/Review 全文阅读、结构化 Markdown 生成、Figure/Table 提取、Wiki 重建、Reading Canvas 和文件状态工具。
 - `lens-literature-followup/`：RSS/API 获取、项目匹配、持久状态、AI 摘要及 weekly/project follow-up 页面。
 - `lens-paper-note-to-ppt/`：按照 `ppt.config` 把 LENS 笔记转换为以图片为主的 PowerPoint。
 
@@ -93,8 +93,8 @@ data/literature_followup/literature_followup.sqlite3
 
 ## `_system` 根目录文件
 
-- `README.md`：简洁项目入口和语言选择。
-- `README_CN.md` 与 `README_EN.md`：面向用户的项目说明。
+- `README.md`：GitHub 仓库首页默认显示的中文项目说明。
+- `README_EN.md`：由 `README.md` 链接进入的英文项目说明。
 - `LICENSE`：仓库许可证。
 - `.gitignore`：排除 cache、logs、数据库和本地杂项。
 - `.git/`：Git 历史和元数据，不应手动编辑或清理。

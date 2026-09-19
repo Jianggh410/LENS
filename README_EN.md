@@ -2,9 +2,9 @@
 
 **Literature Engine for Note-making and Synthesis**
 
-[中文](README_CN.md) · [Installation](docs/installation.md) · [Configuration](docs/configuration.md) · [Workflow](docs/workflow.md) · [System directories](docs/system-directory.md) · [Troubleshooting](docs/troubleshooting.md)
+[中文](README.md) · [Installation](docs/installation.md) · [Configuration](docs/configuration.md) · [Workflow](docs/workflow.md) · [System directories](docs/system-directory.md) · [Troubleshooting](docs/troubleshooting.md)
 
-LENS is a research-literature workflow composed of Codex Skills and executable scripts. Give a PDF to an Agent and LENS can create a structured Chinese Obsidian note, extract Figures and Tables, build literature indexes, monitor new publications, and convert a note into a figure-led PowerPoint.
+LENS is a research-literature workflow composed of Codex Skills and executable scripts. Give a PDF to an Agent and LENS can create a structured Chinese Markdown file, extract Figures and Tables, build literature indexes, monitor new publications, and convert the Markdown file into a figure-led PowerPoint.
 
 ## Contents
 
@@ -43,7 +43,7 @@ After installation, give a paper or note directly to an Agent. If you do not kno
 
 | Goal | Example prompt |
 | --- | --- |
-| Read a paper | `Use LENS to read this PDF and create a structured literature note.` |
+| Read a paper | `Use LENS to read this PDF and create a structured Markdown file.` |
 | Re-extract figures | `Use LENS to re-extract the Figures and verify panel completeness.` |
 | Process a Review | `Use LENS to read this Review and organize Evidence by Figure and Table.` |
 | Create slides | `Turn this paper note into a PowerPoint.` |
@@ -56,11 +56,11 @@ Attach a PDF and state the task in natural language. The Agent loads the local L
 
 ![Using LENS in an Agent](assets/agent-usage-example.png)
 
-### Structured note output
+### Structured Markdown output
 
-An Article note normally contains YAML metadata, Info, Summary, Intro, Works, Results, a Question–Method Map, Discussion, and Key references. A Review organizes Evidence around numbered Figures and Tables. Extracted visual assets live beside the note in its matching assets directory.
+An Article Markdown file normally contains YAML metadata, Info, Summary, Intro, Works, Results, a Question–Method Map, Discussion, and Key references. A Review organizes Evidence around numbered Figures and Tables. Extracted visual assets live beside the Markdown file in its matching assets directory.
 
-![Example LENS paper note](assets/paper-note-example.png)
+![Example LENS structured Markdown file](assets/paper-note-example.png)
 
 ## 4. Installation
 
@@ -102,7 +102,7 @@ See the [configuration guide](docs/configuration.md) for field-level details.
 
 ### `lens-paper-note`
 
-Reads an Article or Review PDF and creates a structured Chinese Obsidian note. It also provides:
+Reads an Article or Review PDF and creates a structured Chinese Markdown file. It also provides:
 
 - YAML metadata and narrative classification
 - Article Results and Review Evidence organization
